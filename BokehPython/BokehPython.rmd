@@ -21,13 +21,14 @@ library(reticulate)
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 knitr::knit_engines$set(python = reticulate::eng_python)
 reticulate::repl_python()
+quit
 
-
-#py_install("bokeh")
-#py_install("sqlalchemy")
+py_install("pygame")
+py_install("PIL")
 ```
 
 ```{python}
+
 from bokeh.io import output_file, show
 from bokeh.plotting import figure
 plot = figure(plot_width = 400, tools = "pan, box_zoom")
