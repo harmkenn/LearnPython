@@ -1,0 +1,40 @@
+---
+title: "Install Python in Rstudio"
+author: "Ken Harmon"
+date: "8/29/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+https://docs.rstudio.com/tutorials/user/using-python-with-rstudio-and-reticulate/
+
+https://support.rstudio.com/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio
+
+## Install Python
+
+https://docs.conda.io/en/latest/miniconda.html#windows-installers
+
+$ pip install virtualenv
+
+https://support.rstudio.com
+
+```{r}
+pacman::p_load(tidyverse,reticulate)
+
+virtualenv_create("RETICULATE_PYTHON_ENV")
+
+use_python("RETICULATE_PYTHON_ENV")
+```
+
+
+
+
+
+
+
+
