@@ -11,6 +11,8 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+https://solutions.rstudio.com/python/overview
+
 https://docs.rstudio.com/tutorials/user/using-python-with-rstudio-and-reticulate/
 
 https://support.rstudio.com/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio
@@ -23,12 +25,14 @@ $ pip install virtualenv
 
 https://support.rstudio.com
 
+https://www.youtube.com/watch?v=OtINRCXprGg
+
 ```{r}
 pacman::p_load(tidyverse,reticulate)
 
-virtualenv_create("RETICULATE_PYTHON_ENV")
+install_miniconda()
 
-use_python("RETICULATE_PYTHON_ENV")
+
 ```
 
 
