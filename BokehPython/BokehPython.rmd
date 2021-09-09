@@ -27,8 +27,9 @@ py_install("pygame")
 py_install("PIL")
 ```
 
-```{python}
+in terminal ... pip install bokeh
 
+```{python}
 from bokeh.io import output_file, show
 from bokeh.plotting import figure
 plot = figure(plot_width = 400, tools = "pan, box_zoom")
